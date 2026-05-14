@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"circle\startup_stm32f103xb.o"
+"circle\main.o"
+"circle\stm32f1xx_it.o"
+"circle\stm32f1xx_hal_msp.o"
+"circle\fonts.o"
+"circle\ssd1306.o"
+"circle\stm32f1xx_hal_gpio_ex.o"
+"circle\stm32f1xx_hal_i2c.o"
+"circle\stm32f1xx_hal.o"
+"circle\stm32f1xx_hal_rcc.o"
+"circle\stm32f1xx_hal_rcc_ex.o"
+"circle\stm32f1xx_hal_gpio.o"
+"circle\stm32f1xx_hal_dma.o"
+"circle\stm32f1xx_hal_cortex.o"
+"circle\stm32f1xx_hal_pwr.o"
+"circle\stm32f1xx_hal_flash.o"
+"circle\stm32f1xx_hal_flash_ex.o"
+"circle\stm32f1xx_hal_exti.o"
+"circle\system_stm32f1xx.o"
+--strict --scatter "Circle\Circle.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Circle.map" -o Circle\Circle.axf

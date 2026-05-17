@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"triangle\startup_stm32f103xb.o"
+"triangle\main.o"
+"triangle\stm32f1xx_it.o"
+"triangle\stm32f1xx_hal_msp.o"
+"triangle\fonts.o"
+"triangle\ssd1306.o"
+"triangle\stm32f1xx_hal_gpio_ex.o"
+"triangle\stm32f1xx_hal_i2c.o"
+"triangle\stm32f1xx_hal.o"
+"triangle\stm32f1xx_hal_rcc.o"
+"triangle\stm32f1xx_hal_rcc_ex.o"
+"triangle\stm32f1xx_hal_gpio.o"
+"triangle\stm32f1xx_hal_dma.o"
+"triangle\stm32f1xx_hal_cortex.o"
+"triangle\stm32f1xx_hal_pwr.o"
+"triangle\stm32f1xx_hal_flash.o"
+"triangle\stm32f1xx_hal_flash_ex.o"
+"triangle\stm32f1xx_hal_exti.o"
+"triangle\system_stm32f1xx.o"
+--strict --scatter "Triangle\Triangle.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Triangle.map" -o Triangle\Triangle.axf
